@@ -4,48 +4,39 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-width: 100vw;
   background-color: lightgray;
 }
 
 .container {
   display: flex;
   gap: 5em;
+  padding: 2em;
 }
 
 .tv {
-  width: 600px;
-  height: 400px;
-  background-color: green;
-  border: 2px solid black;
-  border-radius: 5px;
-  position: relative;
-}
-
-.tv::before {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 2px;
-  background-color: #fff;
-}
-
-.tv::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  height: 30px;
+  width: 35.3em;
+  height: 25.3em;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   background-color: black;
-  border-radius: 50% 50% 0 0;
+}
+
+.screen {
+  width: 35em;
+  height: 25em;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #ccc;
 }
 
 .remote {
-  width: 10em;
+  width: 13em;
   background-color: black;
   border: 0.1em solid black;
   border-radius: 1.5em;
@@ -54,6 +45,7 @@ body {
   grid-template-rows: repeat(5, 1fr);
   gap: 0.5em;
   padding: 1em;
+  height: 22em;
 }
 
 .button {
