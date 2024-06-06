@@ -1,4 +1,3 @@
-
 body {
   display: flex;
   justify-content: center;
@@ -10,9 +9,9 @@ body {
 .container {
   display: flex;
   gap: 5em;
-} 
+}
 
-.tv {
+#tv {
   width: 35.3em;
   height: 25.3em;
   border: 1px solid black;
@@ -25,13 +24,14 @@ body {
   background-color: black;
 }
 
-.screen {
+#screen {
   width: 35em;
   height: 25em;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   background-color: #171414;
 }
+
 #remote {
   background-color: rgb(31, 31, 31);
   height: 21em;
@@ -39,18 +39,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 2em;
 }
 
-#on-off {
+#power {
   height: 4em;
   width: 8.5em;
   display: flex;
 }
 
-#on-off-button {
+#power-button {
   height: 100%;
   width: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,18 +61,17 @@ body {
   height: 1.6em;
   width: 1.6em;
   border-radius: 1em;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
 }
 
 #red-circle:active {
   background-color: rgb(139, 16, 16);
+
   #white-stripe {
-      border-color: rgb(139, 16, 16);
+  border-color: rgb(139, 16, 16);
   }
 }
 
@@ -97,10 +96,9 @@ body {
   box-sizing: border-box;
 }
 
-#info-button {
+#info {
   height: 100%;
   width: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,44 +108,39 @@ body {
   background-color: rgb(41, 41, 41);
   height: 1.6em;
   width: 1.6em;
-
   border-radius: 1em;
   border-width: 0.2em;
   border-style: solid;
-  border-color: black;
+  border-color: rgb(79, 75, 75);
   box-sizing: border-box;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
-  }
+}
 
-  #info-circle:active {
-      background-color: rgb(71, 70, 70);
-  }
+#info-circle:active {
+  background-color: rgb(71, 70, 70);
+}
 
-  #info-icon {
-      color: grey;
-      font-size: 1em;
-      font-weight: bold;
+#info-icon {
+  color: grey;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.2em;
+  margin-left: 0.04em;
+}
 
-      margin-top: 0.2em;
-      margin-left: 0.04em;
-  }
-
-#vol-ch {
-  height: 7.5em;
+#vol-channel {
+  height: 5em;
   width: 8.5em;
   padding-top: 0.2em;
   display: flex;
 }
 
-#volume, #channel {
+#volume,#channel {
   height: 100%;
   width: 50%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,7 +156,7 @@ body {
 
 }
 
-#vol-text, #ch-text {
+#volume-text,#channel-text {
   color: grey;
   padding-top: 0.1em;
 }
@@ -175,42 +168,37 @@ body {
   border-right: 0.8em solid transparent;
   border-top: 1.5em solid rgb(58, 58, 58);
   cursor: pointer;
-
 }
 
-#channel-numbers {
+
+#channels-numbers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   text-align: center;
-
   height: 8.5em;
   width: 7.5em;
 }
 
-.number-button {
+.button-number {
   background-color: rgb(41, 41, 41);
   height: 1.6em;
   width: 1.6em;
-
   border-radius: 1em;
   border-width: 0.2em;
   border-style: solid;
-  border-color: black;
-
+  border-color: rgb(79, 75, 75);
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 1em;
   font-weight: bold;
   color: rgb(165, 162, 162);
-
   cursor: pointer;
 }
 
-.number-button:active {
+.button-number:active {
   background-color: rgb(102, 87, 87);
 }
