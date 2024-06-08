@@ -31,6 +31,11 @@ body {
   border-radius: 10px;
   background-color: #171414;
 }
+#pantalla{
+  width: 35em;
+  height: 25em;
+  display: none;
+}
 
 #remote {
   background-color: rgb(31, 31, 31);
