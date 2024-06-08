@@ -109,14 +109,12 @@ body {
   justify-content: center;
 }
 #mensaje{
-display: flex;
-justify-content: end;
-align-items: center;
 color: white;
 margin-left: 1.5em;
 font-size: 1.4em;
 margin-top: 0.5em;
 position: absolute;
+
 }
 
 #info-circle {

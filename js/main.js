@@ -15,7 +15,7 @@ const options = {
 
 let arrayBotones = Array.from(botones);
 
-//power button
+//Power button
 power.addEventListener("click", () => {
     interruptor = !interruptor;
     if (interruptor) {
@@ -26,7 +26,7 @@ power.addEventListener("click", () => {
         mensaje.innerHTML = "";
     }
 })
-//Contador para apagar el info
+//Contador para apagar el info y boton info
 let contador=2;
 info.addEventListener("click", () => {
     if (interruptor) {
@@ -37,3 +37,23 @@ info.addEventListener("click", () => {
         }
     }
 })
+//Recorrer los botones y cambiar de canales
+for (let i = 0; i < arrayBotones.length; i++) {
+    arrayBotones[i].addEventListener("click", () => {
+        if (interruptor) {
+            switch (i) {
+                case 0:
+                    pantalla.src = "../img/Simpson.gif";
+                    break;
+                case 1:
+                    pantalla.src = "../img/Static.gif"
+                    break;
+                case 2:
+                    pantalla.src = "../img/Simpson.gif";
+                    break;
+            }
+
+        }
+    })
+
+}
