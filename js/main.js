@@ -20,7 +20,7 @@ let canalDown = document.getElementById("channel-down");
 power.addEventListener("click", () => {
     interruptor = !interruptor;
     if (interruptor) {
-        pantalla.src = "../img/Static.gif"
+        pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Static.gif"
         pantalla.style.display = "inline"
     } else {
         pantalla.src = ""; pantalla.style.display = "none";
@@ -35,39 +35,39 @@ for (let i = 0; i < arrayBotones.length; i++) {
         if (interruptor) {
             switch (i) {
                 case 0:
-                    pantalla.src = "../img/Simpson.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Simpson.gif";
                     ncanal = 1;
                     break;
                 case 1:
-                    pantalla.src = "../img/Bojack.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Bojack.gif";
                     ncanal = 2;
                     break;
                 case 2:
-                    pantalla.src = "../img/BreakingBad.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/BreakingBad.gif";
                     ncanal = 3;
                     break;
                 case 3:
-                    pantalla.src = "../img/Csi.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Csi.gif";
                     ncanal = 4;
                     break;
                 case 4:
-                    pantalla.src = "../img/Friends.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Friends.gif";
                     ncanal = 5;
                     break;
                 case 5:
-                    pantalla.src = "../img/Game.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Game.gif";
                     ncanal = 6;
                     break;
                 case 6:
-                    pantalla.src = "../img/Peaky.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Peaky.gif";
                     ncanal = 7;
                     break;
                 case 7:
-                    pantalla.src = "../img/RickMorty.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/RickMorty.gif";
                     ncanal = 8;
                     break;
                 case 8:
-                    pantalla.src = "../img/Tom.gif";
+                    pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Tom.gif";
                     ncanal = 9;
                     break;
 
@@ -96,43 +96,43 @@ canalUp.addEventListener("click", () => {
     if (interruptor) {
         switch (ncanal) {
             case "static":
-                pantalla.src = "./img/Simpson.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Simpson.gif";
                 ncanal = 1;
                 break;
             case 1:
-                pantalla.src = "../img/Bojack.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Bojack.gif";
                 ncanal = 2;
                 break;
             case 2:
-                pantalla.src = "../img/BreakingBad.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/BreakingBad.gif";
                 ncanal = 3;
                 break;
             case 3:
-                pantalla.src = "../img/Csi.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Csi.gif";
                 ncanal = 4;
                 break;
             case 4:
-                pantalla.src = "../img/Friends.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Friends.gif";
                 ncanal = 5;
                 break;
             case 5:
-                pantalla.src = "../img/Game.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Game.gif";
                 ncanal = 6;
                 break;
             case 6:
-                pantalla.src = "../img/Peaky.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Peaky.gif";
                 ncanal = 7;
                 break;
             case 7:
-                pantalla.src = "../img/RickMorty.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/RickMorty.gif";
                 ncanal = 8;
                 break;
             case 8:
-                pantalla.src = "../img/Tom.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Tom.gif";
                 ncanal = 9;
                 break;
             case 9:
-                pantalla.src = "../img/Simpson.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Simpson.gif";
                 ncanal = 1;
                 break;
 
@@ -145,43 +145,43 @@ canalDown.addEventListener("click", () => {
     if (interruptor) {
         switch (ncanal) {
             case "static":
-                pantalla.src = "./img/Tom.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Tom.gif";
                 ncanal = 9;
                 break;
             case 1:
-                pantalla.src = "../img/Tom.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Tom.gif";
                 ncanal = 9;
                 break;
             case 2:
-                pantalla.src = "../img/Simpson.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Simpson.gif";
                 ncanal = 1;
                 break;
             case 3:
-                pantalla.src = "../img/Bojack.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Bojack.gif";
                 ncanal = 2;
                 break;
             case 4:
-                pantalla.src = "../img/BreakingBad.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/BreakingBad.gif";
                 ncanal = 3;
                 break;
             case 5:
-                pantalla.src = "../img/Csi.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Csi.gif";
                 ncanal = 4;
                 break;
             case 6:
-                pantalla.src = "../img/Friends.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Friends.gif";
                 ncanal = 5;
                 break;
             case 7:
-                pantalla.src = "../img/Game.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Game.gif";
                 ncanal = 6;
                 break;
             case 8:
-                pantalla.src = "../img/Peaky.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/Peaky.gif";
                 ncanal = 7;
                 break;
             case 9:
-                pantalla.src = "../img/RickMorty.gif";
+                pantalla.src = "https://guillermogm.github.io/ProyectoTV/img/RickMorty.gif";
                 ncanal = 8;
                 break;
 
