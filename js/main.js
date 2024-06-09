@@ -12,8 +12,9 @@ const options = {
     month: 'long',
     day: 'numeric'
 };
-
 let arrayBotones = Array.from(botones);
+let canalUp = document.getElementById("channel-up");
+let canalDown = document.getElementById("channel-down");
 
 //Power button
 power.addEventListener("click", () => {
@@ -27,9 +28,7 @@ power.addEventListener("click", () => {
     }
 })
 // Canal en el que estas
-let ncanal
-// Variable de contro info
-let control
+let ncanal = "static"
 //Recorrer los botones y cambiar de canales
 for (let i = 0; i < arrayBotones.length; i++) {
     arrayBotones[i].addEventListener("click", () => {
@@ -38,47 +37,38 @@ for (let i = 0; i < arrayBotones.length; i++) {
                 case 0:
                     pantalla.src = "../img/Simpson.gif";
                     ncanal = 1;
-                    control = ncanal;
                     break;
                 case 1:
                     pantalla.src = "../img/Bojack.gif";
                     ncanal = 2;
-                    control = ncanal;
                     break;
                 case 2:
                     pantalla.src = "../img/BreakingBad.gif";
                     ncanal = 3;
-                    control = ncanal;
                     break;
                 case 3:
                     pantalla.src = "../img/Csi.gif";
                     ncanal = 4;
-                    control = ncanal;
                     break;
                 case 4:
                     pantalla.src = "../img/Friends.gif";
                     ncanal = 5;
-                    control = ncanal;
                     break;
                 case 5:
                     pantalla.src = "../img/Game.gif";
                     ncanal = 6;
-                    control = ncanal;
                     break;
                 case 6:
                     pantalla.src = "../img/Peaky.gif";
                     ncanal = 7;
-                    control = ncanal;
                     break;
                 case 7:
                     pantalla.src = "../img/RickMorty.gif";
                     ncanal = 8;
-                    control = ncanal;
                     break;
                 case 8:
                     pantalla.src = "../img/Tom.gif";
                     ncanal = 9;
-                    control = ncanal;
                     break;
 
             }
@@ -97,7 +87,105 @@ info.addEventListener("click", () => {
         }, 0);
         setTimeout(function () {
             clearInterval(intervalId);
-            mensaje.innerHTML="";
-        }, 1200);
+            mensaje.innerHTML = "";
+        }, 1450);
+    }
+})
+// Boton canal hacia arriva
+canalUp.addEventListener("click", () => {
+    if (interruptor) {
+        switch (ncanal) {
+            case "static":
+                pantalla.src = "./img/Simpson.gif";
+                ncanal = 1;
+                break;
+            case 1:
+                pantalla.src = "../img/Bojack.gif";
+                ncanal = 2;
+                break;
+            case 2:
+                pantalla.src = "../img/BreakingBad.gif";
+                ncanal = 3;
+                break;
+            case 3:
+                pantalla.src = "../img/Csi.gif";
+                ncanal = 4;
+                break;
+            case 4:
+                pantalla.src = "../img/Friends.gif";
+                ncanal = 5;
+                break;
+            case 5:
+                pantalla.src = "../img/Game.gif";
+                ncanal = 6;
+                break;
+            case 6:
+                pantalla.src = "../img/Peaky.gif";
+                ncanal = 7;
+                break;
+            case 7:
+                pantalla.src = "../img/RickMorty.gif";
+                ncanal = 8;
+                break;
+            case 8:
+                pantalla.src = "../img/Tom.gif";
+                ncanal = 9;
+                break;
+            case 9:
+                pantalla.src = "../img/Simpson.gif";
+                ncanal = 1;
+                break;
+
+        }
+
+    }
+})
+// Boton canal hacia abajo
+canalDown.addEventListener("click", () => {
+    if (interruptor) {
+        switch (ncanal) {
+            case "static":
+                pantalla.src = "./img/Tom.gif";
+                ncanal = 9;
+                break;
+            case 1:
+                pantalla.src = "../img/Tom.gif";
+                ncanal = 9;
+                break;
+            case 2:
+                pantalla.src = "../img/Simpson.gif";
+                ncanal = 1;
+                break;
+            case 3:
+                pantalla.src = "../img/Bojack.gif";
+                ncanal = 2;
+                break;
+            case 4:
+                pantalla.src = "../img/BreakingBad.gif";
+                ncanal = 3;
+                break;
+            case 5:
+                pantalla.src = "../img/Csi.gif";
+                ncanal = 4;
+                break;
+            case 6:
+                pantalla.src = "../img/Friends.gif";
+                ncanal = 5;
+                break;
+            case 7:
+                pantalla.src = "../img/Game.gif";
+                ncanal = 6;
+                break;
+            case 8:
+                pantalla.src = "../img/Peaky.gif";
+                ncanal = 7;
+                break;
+            case 9:
+                pantalla.src = "../img/RickMorty.gif";
+                ncanal = 8;
+                break;
+
+        }
+
     }
 })
