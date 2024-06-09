@@ -21,7 +21,7 @@ Welcome to the Interactive TV documentation. This project recreates a functional
 
 ## Structure :file_folder:
 
-![alt text](https://github.com/guillermogm/ProyectoTV/blob/master/img/readme.jpg?raw=true)
+![alt text](https://github.com/guillermogm/ProyectoTV/blob/master/img/Readme.jpg?raw=true)
 
 <div id="features"></div>
 
