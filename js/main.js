@@ -197,8 +197,11 @@ canalDown.addEventListener("click", () => {
 let conVol = 0;
 // Volumen +
 volUp.addEventListener("click", () => {
+    //Si esta encendido
     if (interruptor) {
+        //Muestra barra de volumen
         volMain.style.display = "block";
+        //Entra si el contador de volumen esta entre 20 y 0 
         if (conVol <= 20 && conVol >= 0) {
             conVol += 2;
             let intervalVolUp = setInterval(function () {
@@ -210,6 +213,7 @@ volUp.addEventListener("click", () => {
                 volMain.style.display = "none";
             }, 1400);
         }
+        // Si el volumen es mas de 20(El maximo) muestra la barra, cambia el contador y esconde la barra.
         if (conVol == 22) { 
             let intervalVolUp = setInterval(function () {
                 conVol=20;
@@ -225,8 +229,11 @@ volUp.addEventListener("click", () => {
 })
 // Volumen -
 volDown.addEventListener("click", () => {
+   //Si esta encendido
     if (interruptor) {
+       //Muestra barra de volumen
         volMain.style.display = "block";
+       //Entra si el contador de volumen esta entre 20 y 0 
         if (conVol <= 20 && conVol >= 0) {
             conVol -= 2;
             let intervalVolDown = setInterval(function () {
@@ -238,6 +245,7 @@ volDown.addEventListener("click", () => {
                 volMain.style.display = "none";
             }, 1400);
         }
+        // Si el volumen es menos de 0(El minimo) muestra la barra, cambia el contador y esconde la barra.
         if (conVol == -2) { 
             let intervalVolDown = setInterval(function () {
                 conVol=0;
