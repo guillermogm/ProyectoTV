@@ -29,7 +29,7 @@ Welcome to the Interactive TV documentation. This project recreates a functional
 - **Multiple Channels:** This interactive TV has many channels to choose.
 - **Power Button:** This TV start and stops working once the power button is pressed.
 - **Info:** When you press the info button in the remote you can see in which channel you are and the current date.
-- **Arrows channel** You can navigate throught the channels with the arrows buttons you can change one channel up or down.
+- **Arrows channel:** You can navigate throught the channels with the arrows buttons you can change one channel up or down.
 
 <div id="live-deployment"></div>
 

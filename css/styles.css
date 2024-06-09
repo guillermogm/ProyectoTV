@@ -36,7 +36,22 @@ body {
   height: 25em;
   display: none;
 }
-
+#vol-main{
+  display: none;
+  position: absolute;
+  top: 70%;
+  margin-left: 1em;
+  background-color: blue;
+  width: 21em;
+  height: 2em;
+}
+#vol-second{
+ height: 1em;
+ margin-top: 0.5em;
+ margin-left: 0.5em;
+ background-color: white;
+ width: 0em;
+}
 #remote {
   background-color: rgb(31, 31, 31);
   height: 21em;

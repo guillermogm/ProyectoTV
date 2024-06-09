@@ -15,6 +15,8 @@ const options = {
 let arrayBotones = Array.from(botones);
 let canalUp = document.getElementById("channel-up");
 let canalDown = document.getElementById("channel-down");
+let volMain= document.getElementById("vol-main");
+let volSecond=document.getElementById("vol-second");
 
 //Power button
 power.addEventListener("click", () => {
