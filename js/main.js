@@ -15,8 +15,11 @@ const options = {
 let arrayBotones = Array.from(botones);
 let canalUp = document.getElementById("channel-up");
 let canalDown = document.getElementById("channel-down");
-let volMain= document.getElementById("vol-main");
-let volSecond=document.getElementById("vol-second");
+let volMain = document.getElementById("vol-main");
+let volSecond = document.getElementById("vol-second");
+let volUp = document.getElementById("vol-up");
+let volDown = document.getElementById("vol-down");
+
 
 //Power button
 power.addEventListener("click", () => {
@@ -191,3 +194,33 @@ canalDown.addEventListener("click", () => {
 
     }
 })
+let conVol = 0;
+// Volumen +
+volUp.addEventListener("click", () => {
+    if (interruptor) {
+        volMain.style.display = "block";
+        if (conVol < 20 && conVol >= 0) {
+            conVol += 2;
+            let intervalVolUp = setInterval(function () {
+                console.log(conVol)
+                volSecond.style.width = conVol + "em";
+            }, 0);
+
+            setTimeout(function () {
+                clearInterval(intervalVolUp);
+                volMain.style.display = "none";
+            }, 2000);
+        }
+        if (conVol == 20) { 
+            let intervalVolUp = setInterval(function () {
+            }, 0);
+
+            setTimeout(function () {
+                clearInterval(intervalVolUp);
+                volMain.style.display = "none";
+            }, 2000);
+        }
+    }
+
+})
+
