@@ -199,26 +199,54 @@ let conVol = 0;
 volUp.addEventListener("click", () => {
     if (interruptor) {
         volMain.style.display = "block";
-        if (conVol < 20 && conVol >= 0) {
+        if (conVol <= 20 && conVol >= 0) {
             conVol += 2;
             let intervalVolUp = setInterval(function () {
-                console.log(conVol)
                 volSecond.style.width = conVol + "em";
             }, 0);
 
             setTimeout(function () {
                 clearInterval(intervalVolUp);
                 volMain.style.display = "none";
-            }, 2000);
+            }, 1400);
         }
-        if (conVol == 20) { 
+        if (conVol == 22) { 
             let intervalVolUp = setInterval(function () {
+                conVol=20;
             }, 0);
 
             setTimeout(function () {
                 clearInterval(intervalVolUp);
                 volMain.style.display = "none";
-            }, 2000);
+            }, 1400);
+        }
+    }
+
+})
+// Volumen -
+volDown.addEventListener("click", () => {
+    if (interruptor) {
+        volMain.style.display = "block";
+        if (conVol <= 20 && conVol >= 0) {
+            conVol -= 2;
+            let intervalVolDown = setInterval(function () {
+                volSecond.style.width = conVol + "em";
+            }, 0);
+
+            setTimeout(function () {
+                clearInterval(intervalVolDown);
+                volMain.style.display = "none";
+            }, 1400);
+        }
+        if (conVol == -2) { 
+            let intervalVolDown = setInterval(function () {
+                conVol=0;
+            }, 0);
+
+            setTimeout(function () {
+                clearInterval(intervalVolDown);
+                volMain.style.display = "none";
+            }, 1400);
         }
     }
 
